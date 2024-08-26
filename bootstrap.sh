@@ -46,3 +46,14 @@ sudo apt install -y build-essential \
     liblzma-dev
 pyenv install 3.12
 pyenv global 3.12
+
+# Install PHP
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt-get install -y openssl php8.3{,-cli,-common,-fpm,-mysql,-zip,-gd,-mbstring,-curl,-xml,-bcmath,-tokenizer}
+sudo update-alternatives --set php /usr/bin/php8.3
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+# Install Database
+sudo apt install mysql-server
+sudo apt install redis-server
