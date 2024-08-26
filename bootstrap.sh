@@ -55,5 +55,6 @@ sudo update-alternatives --set php /usr/bin/php8.3
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install Database
-sudo apt install mysql-server
-sudo apt install redis-server
+sudo apt install -y mysql-server
+sudo apt install -y redis-server
+sudo apt install -y postgresql
