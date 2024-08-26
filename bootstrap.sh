@@ -44,3 +44,5 @@ sudo apt install -y build-essential \
     libxmlsec1-dev \
     libffi-dev \
     liblzma-dev
+pyenv install 3.12
+pyenv global 3.12
